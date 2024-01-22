@@ -10,11 +10,9 @@
     "test:cypress": "cypress run"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.7.2",
     "jsdom": "^23.1.0",
     "pinia": "^2.1.7",
     "unplugin-vue2-script-setup": "^0.11.4",
-    "vite-plugin-vue2": "^2.0.3",
     "vue": "npm:@neverendingsupport/vue2@2.7.18-trial"
   },
   "overrides": {
@@ -38,6 +36,7 @@
     "prettier": "^3.1.1",
     "typescript": "^5.3.3",
     "vite": "^4.5.1",
-    "vitest": "latest"
+    "vitest": "latest",
+    "vue-template-compiler": "npm:@neverendingsupport/vue2@2.7.18-trial-template-compiler"
   }
 }

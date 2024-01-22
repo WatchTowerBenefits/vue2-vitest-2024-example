@@ -1,4 +1,1 @@
-import Vue from 'vue'
-import VCA from '@vue/composition-api'
-
-Vue.use(VCA)
+// If you needed to setup your test environment, this is where you would do so...

@@ -1,5 +1,5 @@
+import Vue, { nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
-import { nextTick } from '@vue/composition-api'
 import Hello from '../src/components/Options.vue'
 
 test('mount component', async () => {
@@ -23,4 +23,8 @@ test('mount component', async () => {
   await wrapper.get('button').trigger('click')
 
   expect(wrapper.text()).toContain('4 x 4 = 16')
+})
+
+test('Uses Vue 2.7 NES Trial version', async () => {
+  expect(Vue.version).toContain('-trial')
 })

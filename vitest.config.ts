@@ -1,9 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig, type UserConfig } from 'vite'
 import type { InlineConfig } from 'vitest';
-import { createVuePlugin as Vue2 } from 'vite-plugin-vue2'
-import ScriptSetup from 'unplugin-vue2-script-setup/vite'
-
+import vue from '@vitejs/plugin-vue2'
 
 interface VitestConfigExport extends UserConfig {
   test: InlineConfig;
@@ -11,8 +9,7 @@ interface VitestConfigExport extends UserConfig {
 
 export default defineConfig({
   plugins: [
-    Vue2(),
-    ScriptSetup({}),
+    vue()
   ],
   test: {
     globals: true,
